@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtTiltle"
+            android:text="Title"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtTitle"
+            android:layout_toRightOf="@id/txtTiltle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:freezesText="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtDescription"
+            android:text="Description"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edtDescription"
+            android:layout_toRightOf="@id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:freezesText="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+
+            android:id="@+id/edtStartDate"
+            android:focusable="false"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Start Date" />
+       <EditText
+           android:id="@+id/edtDayCount"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content" />
+        <TextView
+            android:text="Day"
+            android:textSize="26sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/cbSun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sun"/>
+        <CheckBox
+            android:id="@+id/cbMon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mon"/>
+        <CheckBox
+            android:id="@+id/cbTue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tue"/>
+        <CheckBox
+            android:id="@+id/cbWed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wed"/>
+        <CheckBox
+            android:id="@+id/cbThu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thu"/>
+        <CheckBox
+            android:id="@+id/cbFri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fri"/>
+        <CheckBox
+            android:id="@+id/cbSat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sat"/>
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/btnCalendarProvide"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Click Here to Add Calendar Provide" />
+
+</LinearLayout>
